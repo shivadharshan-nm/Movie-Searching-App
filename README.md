@@ -1,4 +1,4 @@
-# [Movie Searching App]([https://www.omdbapi.com](https://wantmoviedetails.netlify.app/))
+# [Movie Searching App](https://www.omdbapi.com](https://wantmoviedetails.netlify.app/)
 
 The Movie Search Application is a React-based web app that allows users to search for movies, view detailed movie information, and filter results by type (movie, series, or episode) using the OMDb API. 
 The app also features a clean and responsive design styled with Tailwind CSS, enhanced user experience, and smooth navigation.
