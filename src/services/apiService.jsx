@@ -1,8 +1,13 @@
 import axios from 'axios';
 
-const API_KEY = '65bf73';
-const BASE_URL = 'https://www.omdbapi.com/';
+// CORS proxy URL to bypass restrictions
+const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
 
+// Base OMDb API URL
+const API_KEY = '65bf73';
+const BASE_URL = `${CORS_PROXY}http://www.omdbapi.com/`;
+
+// Fetch movies by query
 export const fetchMovies = async (query, page = 1, type = '') => {
   try {
     const response = await axios.get(BASE_URL, {
@@ -19,6 +24,7 @@ export const fetchMovies = async (query, page = 1, type = '') => {
   }
 };
 
+// Fetch detailed information for a specific movie
 export const fetchMovieDetails = async (movieId) => {
   try {
     const response = await axios.get(BASE_URL, {
