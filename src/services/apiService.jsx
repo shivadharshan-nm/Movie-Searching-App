@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // CORS proxy URL to bypass restrictions
-const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/corsdemo';
 
 // Base OMDb API URL
 const API_KEY = '65bf73';
