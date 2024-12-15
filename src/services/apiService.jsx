@@ -1,11 +1,8 @@
 import axios from 'axios';
 
-// CORS proxy URL to bypass restrictions
-const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/corsdemo';
-
-// Base OMDb API URL
+// Base OMDb API URL with proxy
+const BASE_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://www.omdbapi.com/')}`;
 const API_KEY = '65bf73';
-const BASE_URL = `${CORS_PROXY}http://www.omdbapi.com/`;
 
 // Fetch movies by query
 export const fetchMovies = async (query, page = 1, type = '') => {
